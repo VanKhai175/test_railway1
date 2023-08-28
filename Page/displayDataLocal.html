@@ -1,0 +1,47 @@
+<div class="loginTable">
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="rowTableLogin">#</th>
+        <th class="rowTableLogin">Name</th>
+        <th class="rowTableLogin">Email</th>
+        <th class="rowTableLogin">Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in dataInfo">
+        <th lass="itemRowLogin">{{$index}}</th>
+        <th class="itemRowLogin">{{item.name}}</th>
+        <th class="itemRowLogin">{{item.email}}</th>
+        <th class="itemRowLogin">{{item.password}}</th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="clockCoutdown">
+  <div class="clock-wrap">
+    <div class="clock pro-0">
+      <span class="count">0</span>
+    </div>
+  </div>
+  <div class="action">
+    <div class="input">
+      <input
+        class="input-num"
+        type="number"
+        min="1"
+        placeholder="Enter Minute"
+      /><input
+        data-action="start"
+        class="input-btn"
+        type="button"
+        value="Start"
+      />
+    </div>
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-drag-and-drop-lists/1.4.0/angular-drag-and-drop-lists.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
